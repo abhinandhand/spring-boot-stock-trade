@@ -2,9 +2,9 @@
 
 ## Framework used
 
-1. Java 21, 
-2. Spring Boot 3.3.1,
-3. Maven 3.8. 
+1. Java 21
+2. Spring Boot 3.3.1
+3. Maven 3.9.0 
 4. For codebase concise and readability, used Lombok and Mapstruct.
 
 ## Start up command
