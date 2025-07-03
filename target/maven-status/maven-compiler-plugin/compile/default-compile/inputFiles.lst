@@ -1,0 +1,12 @@
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/Application.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/controller/StockTradeController.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/dto/StockRequest.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/dto/StockResponse.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/exceptions/Errors.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/exceptions/GlobalExceptionsHandler.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/exceptions/StockNotFountException.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/mappers/StockMappers.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/model/StockTrade.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/repository/StockTradeRepository.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/services/TradeService.java
+/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/src/main/java/nl/rabobank/assessments/stocktrades/services/TradeServiceImpl.java
