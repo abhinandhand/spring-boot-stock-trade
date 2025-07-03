@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="nl.rabobank.assessments.stocktrades.ApplicationTests" time="3.786" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/test-classes:/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/classes:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.3.1/spring-boot-starter-actuator-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.1/spring-boot-starter-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot/3.3.1/spring-boot-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.1/spring-boot-autoconfigure-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.1/spring-boot-starter-logging-3.3.1.jar:/Users/abhinandhan/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/abhinandhan/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/abhinandhan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/abhinandhan/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/abhinandhan/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/abhinandhan/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/abhinandhan/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.3.1/spring-boot-actuator-autoconfigure-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-actuator/3.3.1/spring-boot-actuator-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-observation/1.13.1/micrometer-observation-1.13.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-commons/1.13.1/micrometer-commons-1.13.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-jakarta9/1.13.1/micrometer-jakarta9-1.13.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-core/1.13.1/micrometer-core-1.13.1.jar:/Users/abhinandhan/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/abhinandhan/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.1/spring-boot-starter-web-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.1/spring-boot-starter-json-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.1/spring-boot-starter-tomcat-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.25/tomcat-embed-core-10.1.25.jar:/Users/abhinandhan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.25/tomcat-embed-websocket-10.1.25.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-web/6.1.10/spring-web-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-beans/6.1.10/spring-beans-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-webmvc/6.1.10/spring-webmvc-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-aop/6.1.10/spring-aop-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-context/6.1.10/spring-context-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-expression/6.1.10/spring-expression-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.1/spring-boot-starter-data-jpa-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.1/spring-boot-starter-aop-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.1/spring-boot-starter-jdbc-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-jdbc/6.1.10/spring-jdbc-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/hibernate/orm/hibernate-core/6.5.2.Final/hibernate-core-6.5.2.Final.jar:/Users/abhinandhan/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/abhinandhan/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/abhinandhan/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/abhinandhan/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/abhinandhan/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/abhinandhan/.m2/repository/net/bytebuddy/byte-buddy/1.14.17/byte-buddy-1.14.17.jar:/Users/abhinandhan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/abhinandhan/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/abhinandhan/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/abhinandhan/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/abhinandhan/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/abhinandhan/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/abhinandhan/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/abhinandhan/.m2/repository/org/springframework/data/spring-data-jpa/3.3.1/spring-data-jpa-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/data/spring-data-commons/3.3.1/spring-data-commons-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-orm/6.1.10/spring-orm-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-tx/6.1.10/spring-tx-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-aspects/6.1.10/spring-aspects-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.1/spring-boot-starter-test-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-test/3.3.1/spring-boot-test-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.1/spring-boot-test-autoconfigure-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/abhinandhan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/abhinandhan/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/abhinandhan/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/abhinandhan/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/abhinandhan/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/abhinandhan/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/abhinandhan/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/abhinandhan/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/abhinandhan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/abhinandhan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/abhinandhan/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/abhinandhan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar:/Users/abhinandhan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/abhinandhan/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/abhinandhan/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/abhinandhan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-core/6.1.10/spring-core-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-jcl/6.1.10/spring-jcl-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-test/6.1.10/spring-test-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/abhinandhan/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/abhinandhan/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.1/spring-boot-starter-validation-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.25/tomcat-embed-el-10.1.25.jar:/Users/abhinandhan/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/abhinandhan/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/abhinandhan/.m2/repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Amsterdam"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/surefire/surefirebooter-20250703131843243_3.jar /Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/surefire 2025-07-03T13-18-43_200-jvmRun1 surefire-20250703131843243_1tmp surefire_0-20250703131843243_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/test-classes:/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/classes:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.3.1/spring-boot-starter-actuator-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.1/spring-boot-starter-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot/3.3.1/spring-boot-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.1/spring-boot-autoconfigure-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.1/spring-boot-starter-logging-3.3.1.jar:/Users/abhinandhan/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/Users/abhinandhan/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/Users/abhinandhan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/abhinandhan/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/abhinandhan/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/abhinandhan/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/abhinandhan/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.3.1/spring-boot-actuator-autoconfigure-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-actuator/3.3.1/spring-boot-actuator-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-observation/1.13.1/micrometer-observation-1.13.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-commons/1.13.1/micrometer-commons-1.13.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-jakarta9/1.13.1/micrometer-jakarta9-1.13.1.jar:/Users/abhinandhan/.m2/repository/io/micrometer/micrometer-core/1.13.1/micrometer-core-1.13.1.jar:/Users/abhinandhan/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/abhinandhan/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.1/spring-boot-starter-web-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.1/spring-boot-starter-json-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.1/jackson-module-parameter-names-2.17.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.1/spring-boot-starter-tomcat-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.25/tomcat-embed-core-10.1.25.jar:/Users/abhinandhan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.25/tomcat-embed-websocket-10.1.25.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-web/6.1.10/spring-web-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-beans/6.1.10/spring-beans-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-webmvc/6.1.10/spring-webmvc-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-aop/6.1.10/spring-aop-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-context/6.1.10/spring-context-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-expression/6.1.10/spring-expression-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.1/spring-boot-starter-data-jpa-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.1/spring-boot-starter-aop-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.1/spring-boot-starter-jdbc-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-jdbc/6.1.10/spring-jdbc-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/hibernate/orm/hibernate-core/6.5.2.Final/hibernate-core-6.5.2.Final.jar:/Users/abhinandhan/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/abhinandhan/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/abhinandhan/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/abhinandhan/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/abhinandhan/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/abhinandhan/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/abhinandhan/.m2/repository/net/bytebuddy/byte-buddy/1.14.17/byte-buddy-1.14.17.jar:/Users/abhinandhan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/abhinandhan/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/abhinandhan/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/abhinandhan/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/abhinandhan/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/abhinandhan/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/abhinandhan/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/abhinandhan/.m2/repository/org/springframework/data/spring-data-jpa/3.3.1/spring-data-jpa-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/data/spring-data-commons/3.3.1/spring-data-commons-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-orm/6.1.10/spring-orm-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-tx/6.1.10/spring-tx-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-aspects/6.1.10/spring-aspects-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.1/spring-boot-starter-test-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-test/3.3.1/spring-boot-test-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.1/spring-boot-test-autoconfigure-3.3.1.jar:/Users/abhinandhan/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/abhinandhan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/abhinandhan/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/abhinandhan/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/abhinandhan/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/abhinandhan/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/abhinandhan/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/abhinandhan/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/abhinandhan/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/abhinandhan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/abhinandhan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/abhinandhan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/abhinandhan/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/abhinandhan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar:/Users/abhinandhan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/abhinandhan/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/abhinandhan/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/abhinandhan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-core/6.1.10/spring-core-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-jcl/6.1.10/spring-jcl-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/springframework/spring-test/6.1.10/spring-test-6.1.10.jar:/Users/abhinandhan/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/abhinandhan/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/abhinandhan/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/abhinandhan/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.1/spring-boot-starter-validation-3.3.1.jar:/Users/abhinandhan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.25/tomcat-embed-el-10.1.25.jar:/Users/abhinandhan/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/abhinandhan/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/abhinandhan/.m2/repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/abhinandhan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade/target/surefire/surefirebooter-20250703131843243_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7"/>
+    <property name="user.name" value="abhinandhan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/abhinandhan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/jw/z1sm1j110x90c4zlhdgss40h0000gn/T/"/>
+    <property name="com.zaxxer.hikari.pool_number" value="5"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="72557"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abhinandhan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="21.0.7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[stocktrades] "/>
+  </properties>
+  <testcase name="testNotAllowedMethod" classname="nl.rabobank.assessments.stocktrades.ApplicationTests" time="0.782">
+    <system-out><![CDATA[13:18:43.608 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [nl.rabobank.assessments.stocktrades.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:18:43.653 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration nl.rabobank.assessments.stocktrades.Application for test class nl.rabobank.assessments.stocktrades.ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2025-07-03T13:18:43.802+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Starting ApplicationTests using Java 21.0.7 with PID 72557 (started by abhinandhan in /Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade)
+2025-07-03T13:18:43.802+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-07-03T13:18:44.121+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-03T13:18:44.142+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-07-03T13:18:44.398+02:00  INFO 72557 --- [stocktrades] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-03T13:18:44.419+02:00  INFO 72557 --- [stocktrades] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-07-03T13:18:44.431+02:00  INFO 72557 --- [stocktrades] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-03T13:18:44.549+02:00  INFO 72557 --- [stocktrades] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-03T13:18:44.558+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-03T13:18:44.630+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:StockInfo user=SA
+2025-07-03T13:18:44.631+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-03T13:18:44.643+02:00  WARN 72557 --- [stocktrades] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-03T13:18:44.983+02:00  INFO 72557 --- [stocktrades] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-03T13:18:45.009+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:45.229+02:00  WARN 72557 --- [stocktrades] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-03T13:18:45.532+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-03T13:18:45.532+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-03T13:18:45.549+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03T13:18:45.556+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 24 ms
+2025-07-03T13:18:45.587+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Started ApplicationTests in 1.889 seconds (process running for 2.277)
+2025-07-03T13:18:45.631+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:45.632+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-03T13:18:45.633+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2025-07-03T13:18:45.644+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Starting ApplicationTests using Java 21.0.7 with PID 72557 (started by abhinandhan in /Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade)
+2025-07-03T13:18:45.644+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-07-03T13:18:45.719+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-03T13:18:45.725+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-07-03T13:18:45.761+02:00  INFO 72557 --- [stocktrades] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-03T13:18:45.761+02:00  INFO 72557 --- [stocktrades] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-03T13:18:45.764+02:00  INFO 72557 --- [stocktrades] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-03T13:18:45.765+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-03T13:18:45.766+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:StockInfo user=SA
+2025-07-03T13:18:45.766+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-03T13:18:45.766+02:00  WARN 72557 --- [stocktrades] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-03T13:18:45.790+02:00  INFO 72557 --- [stocktrades] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-03T13:18:45.791+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:45.848+02:00  WARN 72557 --- [stocktrades] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-03T13:18:45.974+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-03T13:18:45.974+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-03T13:18:45.976+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03T13:18:45.980+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2025-07-03T13:18:45.994+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Started ApplicationTests in 0.358 seconds (process running for 2.684)
+2025-07-03T13:18:46.379+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":null,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:46.404+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Request method 'PUT' is not supported
+2025-07-03T13:18:46.406+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Request method 'PATCH' is not supported
+2025-07-03T13:18:46.406+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Request method 'DELETE' is not supported
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/abhinandhan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testGetTradeRecordWithId" classname="nl.rabobank.assessments.stocktrades.ApplicationTests" time="0.311">
+    <system-out><![CDATA[2025-07-03T13:18:46.412+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:46.413+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-03T13:18:46.413+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2025-07-03T13:18:46.422+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Starting ApplicationTests using Java 21.0.7 with PID 72557 (started by abhinandhan in /Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade)
+2025-07-03T13:18:46.422+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-07-03T13:18:46.492+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-03T13:18:46.497+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-07-03T13:18:46.528+02:00  INFO 72557 --- [stocktrades] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-03T13:18:46.529+02:00  INFO 72557 --- [stocktrades] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-03T13:18:46.531+02:00  INFO 72557 --- [stocktrades] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-03T13:18:46.531+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-07-03T13:18:46.532+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:StockInfo user=SA
+2025-07-03T13:18:46.533+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-07-03T13:18:46.533+02:00  WARN 72557 --- [stocktrades] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-03T13:18:46.547+02:00  INFO 72557 --- [stocktrades] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-03T13:18:46.549+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:46.591+02:00  WARN 72557 --- [stocktrades] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-03T13:18:46.690+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-03T13:18:46.690+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-03T13:18:46.692+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03T13:18:46.694+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2025-07-03T13:18:46.700+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Started ApplicationTests in 0.286 seconds (process running for 3.39)
+2025-07-03T13:18:46.708+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":null,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:46.712+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for id 1
+2025-07-03T13:18:46.720+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for id 2147483647
+2025-07-03T13:18:46.720+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Trade not found with id: 2147483647
+]]></system-out>
+  </testcase>
+  <testcase name="testTradeCreationWithValidData" classname="nl.rabobank.assessments.stocktrades.ApplicationTests" time="0.294">
+    <system-out><![CDATA[2025-07-03T13:18:46.724+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:46.724+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-07-03T13:18:46.739+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2025-07-03T13:18:46.746+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Starting ApplicationTests using Java 21.0.7 with PID 72557 (started by abhinandhan in /Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade)
+2025-07-03T13:18:46.746+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-07-03T13:18:46.801+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-03T13:18:46.805+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-07-03T13:18:46.832+02:00  INFO 72557 --- [stocktrades] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-03T13:18:46.833+02:00  INFO 72557 --- [stocktrades] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-03T13:18:46.835+02:00  INFO 72557 --- [stocktrades] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-03T13:18:46.835+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-07-03T13:18:46.836+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn24: url=jdbc:h2:mem:StockInfo user=SA
+2025-07-03T13:18:46.836+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-07-03T13:18:46.836+02:00  WARN 72557 --- [stocktrades] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-03T13:18:46.850+02:00  INFO 72557 --- [stocktrades] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-03T13:18:46.851+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:46.890+02:00  WARN 72557 --- [stocktrades] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-03T13:18:46.972+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-03T13:18:46.972+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-03T13:18:46.973+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03T13:18:46.975+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-07-03T13:18:46.982+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Started ApplicationTests in 0.241 seconds (process running for 3.672)
+2025-07-03T13:18:46.990+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":null,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+expect30actual30
+2025-07-03T13:18:47.008+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"102"]
+             Body = {"id":null,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":2,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.012+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Valid types are buy or sell
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":null,"type":"Foo","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"status":400,"message":"Valid types are buy or sell","timeStamp":"2025-07-03T13:18:47.012939"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.014+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Shares should not exceed 100
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"103"]
+             Body = {"id":null,"type":"sell","userId":23,"symbol":"AAC","shares":101,"price":133,"timestamp":1521522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"status":400,"message":"Shares should not exceed 100","timeStamp":"2025-07-03T13:18:47.01497"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.016+02:00 ERROR 72557 --- [stocktrades] [           main] n.r.a.s.e.GlobalExceptionsHandler        : Exception occured when processing the request:Shares should not  be less than 1
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":null,"type":"sell","userId":23,"symbol":"AAC","shares":0,"price":133,"timestamp":1521522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"status":400,"message":"Shares should not  be less than 1","timeStamp":"2025-07-03T13:18:47.016176"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTrades" classname="nl.rabobank.assessments.stocktrades.ApplicationTests" time="0.306">
+    <system-out><![CDATA[2025-07-03T13:18:47.019+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:47.019+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-07-03T13:18:47.041+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2025-07-03T13:18:47.048+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Starting ApplicationTests using Java 21.0.7 with PID 72557 (started by abhinandhan in /Users/abhinandhan/Downloads/challenge 2/spring-boot-stock-trade)
+2025-07-03T13:18:47.048+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-07-03T13:18:47.108+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-03T13:18:47.112+02:00  INFO 72557 --- [stocktrades] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-07-03T13:18:47.137+02:00  INFO 72557 --- [stocktrades] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-03T13:18:47.138+02:00  INFO 72557 --- [stocktrades] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-03T13:18:47.140+02:00  INFO 72557 --- [stocktrades] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-03T13:18:47.140+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-07-03T13:18:47.141+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn28: url=jdbc:h2:mem:StockInfo user=SA
+2025-07-03T13:18:47.141+02:00  INFO 72557 --- [stocktrades] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-07-03T13:18:47.141+02:00  WARN 72557 --- [stocktrades] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-03T13:18:47.155+02:00  INFO 72557 --- [stocktrades] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-03T13:18:47.156+02:00  INFO 72557 --- [stocktrades] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-03T13:18:47.195+02:00  WARN 72557 --- [stocktrades] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-03T13:18:47.271+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-03T13:18:47.271+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-03T13:18:47.272+02:00  INFO 72557 --- [stocktrades] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-03T13:18:47.274+02:00  INFO 72557 --- [stocktrades] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-07-03T13:18:47.280+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.stocktrades.ApplicationTests       : Started ApplicationTests in 0.238 seconds (process running for 3.97)
+2025-07-03T13:18:47.287+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":null,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.291+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"102"]
+             Body = {"id":null,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":2,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.292+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"102"]
+             Body = {"id":null,"type":"sell","userId":25,"symbol":"AAC","shares":12,"price":111,"timestamp":1501522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":3,"type":"sell","userId":25,"symbol":"AAC","shares":12,"price":111,"timestamp":1501522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.294+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Creating stock trade
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /trades
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"102"]
+             Body = {"id":null,"type":"sell","userId":24,"symbol":"AAC","shares":12,"price":133,"timestamp":1511522701000}
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#create(StockRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":4,"type":"sell","userId":24,"symbol":"AAC","shares":12,"price":133,"timestamp":1511522701000}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.296+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching All stock trade
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000},{"id":2,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000},{"id":3,"type":"sell","userId":25,"symbol":"AAC","shares":12,"price":111,"timestamp":1501522701000},{"id":4,"type":"sell","userId":24,"symbol":"AAC","shares":12,"price":133,"timestamp":1511522701000}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.302+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for type buy
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {type=[buy]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.312+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for type sell
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {type=[sell]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":2,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000},{"id":3,"type":"sell","userId":25,"symbol":"AAC","shares":12,"price":111,"timestamp":1501522701000},{"id":4,"type":"sell","userId":24,"symbol":"AAC","shares":12,"price":133,"timestamp":1511522701000}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.313+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for type boo
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {type=[boo]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = []
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.316+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching All stock trade
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {user_id=[23]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000},{"id":2,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000},{"id":3,"type":"sell","userId":25,"symbol":"AAC","shares":12,"price":111,"timestamp":1501522701000},{"id":4,"type":"sell","userId":24,"symbol":"AAC","shares":12,"price":133,"timestamp":1511522701000}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.318+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for user id 2147483647
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {userId=[2147483647]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = []
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.320+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for type buy
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {user_id=[23], type=[buy]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"type":"buy","userId":23,"symbol":"ABX","shares":30,"price":134,"timestamp":1531522701000}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-07-03T13:18:47.321+02:00  INFO 72557 --- [stocktrades] [           main] n.r.a.s.services.TradeServiceImpl        : Fetching stock trade for type sell
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /trades
+       Parameters = {user_id=[23], type=[sell]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = nl.rabobank.assessments.stocktrades.controller.StockTradeController
+           Method = nl.rabobank.assessments.stocktrades.controller.StockTradeController#fetchStockTrade(Optional, Optional)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":2,"type":"sell","userId":23,"symbol":"AAC","shares":12,"price":133,"timestamp":1521522701000},{"id":3,"type":"sell","userId":25,"symbol":"AAC","shares":12,"price":111,"timestamp":1501522701000},{"id":4,"type":"sell","userId":24,"symbol":"AAC","shares":12,"price":133,"timestamp":1511522701000}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>
