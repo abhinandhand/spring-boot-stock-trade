@@ -1,0 +1,13 @@
+nl/rabobank/assessments/stocktrades/mappers/StockMappersImpl.class
+nl/rabobank/assessments/stocktrades/dto/StockResponse.class
+nl/rabobank/assessments/stocktrades/Application.class
+nl/rabobank/assessments/stocktrades/exceptions/GlobalExceptionsHandler.class
+nl/rabobank/assessments/stocktrades/services/TradeServiceImpl.class
+nl/rabobank/assessments/stocktrades/dto/StockRequest.class
+nl/rabobank/assessments/stocktrades/exceptions/StockNotFountException.class
+nl/rabobank/assessments/stocktrades/model/StockTrade.class
+nl/rabobank/assessments/stocktrades/repository/StockTradeRepository.class
+nl/rabobank/assessments/stocktrades/exceptions/Errors.class
+nl/rabobank/assessments/stocktrades/services/TradeService.class
+nl/rabobank/assessments/stocktrades/controller/StockTradeController.class
+nl/rabobank/assessments/stocktrades/mappers/StockMappers.class
